@@ -1,6 +1,6 @@
-const binarySearch = (list: number[], target: number) => {
+const binarySearch = (list: number[], target: number): number | string => {
   
-    if(!list.length) return console.log('The list is empty'); 
+    if(!list.length) return 'The list is empty'; 
     let result: number | string = 'Value not in array';
     let first: number = 0;
     let last: number = list.length - 1;

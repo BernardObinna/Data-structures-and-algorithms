@@ -1,10 +1,10 @@
-let result = 'Value not in array'
+let result: number | string = 'Value not in array'
 
-const recursiveBinarySearch = (list, target) => {
-  if (!list.length) return;
+const recursiveBinarySearch = (list: number[], target: number): number | string => {
+  if (!list.length) return 'The list is empty';
 
 
-  let middle = Math.floor((list.length) / 2)
+  let middle: number = Math.floor((list.length) / 2)
   
   if(list[middle] === target) return result = "Element found" ;
 
